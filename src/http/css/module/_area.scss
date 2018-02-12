@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+//area-add
+.area-add{
+  &:last-child{
+    margin: 0;
+  }
+  text-align: center;
+	@include mq-up(){
+    margin: 0 0 25px 0;
+  }
+  @include mq-down(){
+    margin: 0 0 15px 0;
+    @at-root{
+      .area-add + section{
+        .hdg-main.lv2{
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+}
+.fbWrap{
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.fb_iframe_widget,
+.fb_iframe_widget span,
+.fb_iframe_widget iframe[style]{
+    width: 100% !important;
+}
+
+//area-article
+.area-article{
+  box-shadow: 0px 1px 3px 0px rgba(204, 204, 204, 0.9);
+  background: #fff;
+  @include mq-up(){
+    padding: 30px 35px 50px;
+  }
+  @include mq-down(){
+    margin: 0 -10px;
+    padding: 15px 10px;
+  }
+}

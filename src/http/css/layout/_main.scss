@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+//l-body
+.l-body{
+	background-color: #f2f6f7;
+}
+
+//l-body-wide
+.l-body-wide{
+	@include mq-up(){
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 20px 15px 1px;
+	}
+	@include mq-down(){
+		padding: 20px 10px 1px;
+	}
+}//l-body-wide
+
+//l-body-wrap
+.l-body-wrap{
+  margin: 0 auto;
+  &.article{
+    padding-top: 0;
+  }
+	@media all and (min-width: 1000px){
+		display: flex;
+		justify-content: space-between;
+		max-width: 1200px;
+		padding: 35px 15px 60px;
+	}
+	@media all and (min-width: 768px) and (max-width: 999px) {
+		max-width: 1200px;
+		padding: 30px 15px 50px;
+	}
+	@include mq-down(){
+		padding: 20px 10px 50px;
+	}
+}//l-body-wrap
+
+//l-body-main
+.l-body-main{
+	@media all and (min-width: 1000px){
+		max-width: 790px;
+		width: 100%;
+		margin: 0 2.5% 0 0;
+	}
+}//l-body-main
+
+
+//l-body-sub
+.l-body-sub{
+	@media all and (min-width: 1000px){
+		max-width: 335px;
+		width: 100%;
+		margin: 0 10px 0 0;
+	}
+	@media all and (min-width: 768px) and (max-width: 999px) {
+		margin: 30px 0 0 0;
+	}
+	@include mq-down(){
+		margin: 40px 0 0 0;
+	}
+}//l-body-sub
+
+//bread-crumb-wrap
+.bread-crumb-wrap{
+  overflow-x: auto;
+  @include mq-up(){
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 15px;
+  }
+  @include mq-down(){
+    padding: 10px 15px;
+  }
+}
+
+//bread-crumb
+.bread-crumb{
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  > li{
+    font-weight: bold;
+    &:first-child{
+      &:before{
+        content: none;
+      }
+    }
+    &:before{
+      font-weight: normal;
+      display: inline-block;
+      content: '\003e';
+    }
+    > a{
+      color: #333;
+      font-weight: normal;
+    }
+    &.home{
+      > a{
+        text-indent: -9999px;
+        display: inline-block;
+        background-image: url(/images/icn_bread_home.png);
+        background-repeat: no-repeat;
+      }
+    }
+  }
+  @include mq-up(){
+    > li{
+      @include fts(12, 18);
+      &:before{
+        padding: 0 8px;
+      }
+      &.home{
+        > a{
+          width: 15px;
+          height: 15px;
+          transition: opacity .3s;
+          &:hover{
+            opacity: .7;
+          }
+        }
+      }
+      > a{
+        text-decoration: none;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  @include mq-down(){
+    > li{
+      @include fts(11, 14);
+      &:before{
+        padding: 0 4px;
+      }
+      &.home{
+        > a{
+          background-size: 12px auto;
+          background-position: left center;
+          width: 12px;
+          height: 12px;
+        }
+      }
+    }
+  }
+}

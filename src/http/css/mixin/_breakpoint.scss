@@ -1,0 +1,30 @@
+@charset "UTF-8";
+// 変数の定義
+// min-width
+$breakpoint-up: (
+  'sm': 'all and (min-width: 400px)',
+  'md': 'all and (min-width: 768px)',
+  'lg': 'all and (min-width: 1000px)',
+  'xl': 'all and (min-width: 1200px)',
+) !default;
+
+// max-width
+$breakpoint-down: (
+  'sm': 'all and (max-width: 399px)',
+  'md': 'all and (max-width: 767px)',
+  'lg': 'all and (max-width: 999px)',
+  'xl': 'all and (max-width: 1199px)',
+) !default;
+
+// @mixinの定義
+@mixin mq-up($breakpoint: md) {
+  @media #{map-get($breakpoint-up, $breakpoint)} {
+    @content;
+  }
+}
+
+@mixin  mq-down($breakpoint: md) {
+  @media #{map-get($breakpoint-down, $breakpoint)} {
+    @content;
+  }
+}

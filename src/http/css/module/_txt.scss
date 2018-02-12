@@ -1,0 +1,211 @@
+@charset "UTF-8";
+
+.txt-nor{
+  margin: 20px 0 0 0;
+  @include mq-up(){
+    @include fts(14, 21);
+  }
+  @include mq-down(){
+    @include fts(12, 18);
+  }
+}
+
+.txt-err{
+  color: #d93a3f;
+}
+
+.txt-dot{
+  font-family: sans-serif;
+}
+
+//txt-link
+.txt-link{
+  margin: 15px 0 0 0;
+  > .link-item{
+    display: inline-block;
+    position: relative;
+    color: $colorLink;
+    text-decoration: none;
+    &:before{
+      bottom: auto;
+      position: absolute;
+      left: 0;
+      width: 0;
+      height: 0;
+      margin: auto;
+      border-width: 4.5px 0 4.5px 5px;
+      border-style: solid;
+      border-color: transparent transparent transparent $colorLink;
+      content: "";
+    }
+  }
+  @include mq-up(){
+    @include fts(14, 21);
+    > .link-item{
+      padding: 0 0 0 12px;
+      &:before{
+        top: .5em;
+      }
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+  @include mq-down(){
+    @include fts(12, 18);
+    > .link-item{
+      padding: 0 0 0 8px;
+      &:before{
+        top: .35em;
+      }
+    }
+  }
+}//txt-link
+
+//txt-data
+.txt-data{
+  display: flex;
+  font-weight: bold;
+  > .date{
+    color: #999999;
+    margin: 0 0 0 6px;
+    padding: 0 0 0 6px;
+    border-left: 1px solid #d3d3d3;
+  }
+  &.jobhunting{
+    > .cate{
+      color: $cateJobHunting;
+    }
+  }
+  &.howtowork{
+    > .cate{
+      color: $cateHomeWork;
+    }
+  }
+  &.jobchange{
+    > .cate{
+      color: $cateChangeJob;
+    }
+  }
+  &.parallelcareer{
+    > .cate{
+      color: $cateParallelCareer;
+    }
+  }
+  &.it_marketing{
+    > .cate{
+      color: $cateItMarketing;
+    }
+  }
+  @include mq-up(){
+    @include fts(12,12);
+  }
+  @include mq-down(){
+    @include fts(10,10);
+  }
+}//txt-data
+.lst-popular{
+  .txt-data{
+    @include mq-up(){
+      @include fts(10,10);
+    }
+  }
+}
+
+//txt-voice
+.txt-voice{
+  margin: 25px 0 0 0;
+  display: flex;
+  align-items: center;
+  + .txt-voice{
+    margin: 20px 0 0 0;
+  }
+  > .img{
+    display: block;
+    img{
+      object-fit: cover;
+      border-radius: 50%;
+      font-family: 'object-fit: cover;'
+    }
+  }
+  .name{
+    display: block;
+    @include fts(10, 10);
+  }
+  > .voice{
+    position: relative;
+    &:before,
+    &:after{
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  @include mq-up(){
+    > .img{
+      img{
+        border: 3px solid #d9dada;
+        width: 88px;
+        height: 88px;
+      }
+    }
+    .name{
+      text-align: center;
+      margin: 5px -20px 0;
+    }
+    > .voice{
+      margin: 0 0 0 20px;
+      width: calc(100% - 108px);
+      border-radius: 5px;
+      border: 3px solid #d9dada;
+      @include fts(14, 21);
+      padding: 20px;
+      &:before{
+        border-right: 8px solid #d9dada;
+        border-bottom: 8px solid transparent;
+        border-top: 8px solid transparent;
+        left: -11px;
+      }
+      &:after{
+        border-right: 10px solid #fff;
+        border-bottom: 8px solid transparent;
+        border-top: 8px solid transparent;
+        left: -7px;
+      }
+    }
+  }
+  @include mq-down(){
+    > .img{
+      img{
+        width: 44px;
+        height: 44px;
+        border: 2px solid #d9dada;
+      }
+    }
+    .name{
+      text-align: left;
+      margin: 5px -5px 0 0;
+    }
+    > .voice{
+      margin: 0 0 0 10px;
+      width: calc(100% - 54px);
+      border-radius: 3px;
+      border: 2px solid #d9dada;
+      @include fts(14, 21);
+      padding: 12px;
+      &:before{
+        border-right: 5px solid #d9dada;
+        border-bottom: 5px solid transparent;
+        border-top: 5px solid transparent;
+        left: -7px;
+      }
+      &:after{
+        border-right: 7px solid #fff;
+        border-bottom: 5px solid transparent;
+        border-top: 5px solid transparent;
+        left: -5px;
+      }
+    }
+  }
+}

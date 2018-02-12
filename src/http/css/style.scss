@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/*
+Theme Name: digitalian
+Theme URI: http://digitalian.blam.co.jp/
+Version: 1.0
+*/
+
+//----------------------------------
+// sass　インクルード設定
+//----------------------------------
+
+//variable
+@import "variable/_color.scss";
+
+//mixin
+@import "mixin/_breakpoint.scss";
+@import "mixin/_font-line.scss";
+@import "mixin/_common.scss";
+
+//function
+@import "function/_z-index.scss";
+
+//base
+@import "base/_setting.scss";
+@import "base/_universal.scss";
+
+//layout
+@import "layout/_header.scss";
+@import "layout/_main.scss";
+@import "layout/_footer.scss";
+
+//module
+@import "module/_hdg.scss";
+@import "module/_mainvisual.scss";
+@import "module/_slide.scss";
+@import "module/_lst.scss";
+@import "module/_area.scss";
+@import "module/_txt.scss";
+@import "module/_figure.scss";
+@import "module/_article.scss";
