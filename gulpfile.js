@@ -38,7 +38,7 @@ gulp.task(`sass`, function() {
     errorHandler: notify.onError(`sassにエラーがあります`)
   }))
   .pipe(sass({
-    outputStyle: `compact`
+    outputStyle: `expanded`
   }))
   .pipe(autoprefixer({
     grid: true,
