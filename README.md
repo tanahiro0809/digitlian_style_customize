@@ -80,7 +80,7 @@
    
 ### sassのコンパイル  
 
-#### gulpの利用   
+#### gulpの利用   
 
 1. npmインストール
 
@@ -88,7 +88,7 @@
     $ npm install
     ```
 
-2. gulpのコマンドパスを自動で通す 
+2. gulpのコマンドパスを自動で通す 
 
     ```
     $ npm link gulp
@@ -107,27 +107,27 @@
   
 ### sassファイルのディレクトリ   
 
-gulp起動中に`/src/`配下にあるファイルの編集を行うと自動で`dist`配下にあるcssファイルが更新される。  
+gulp起動中に`/src/`配下にあるファイルの編集を行うと自動で`dist`配下にあるcssファイルが更新される。  
 
 #### sassファイルの各モジュールについて  
 
  - base  
-   リセットcss・ヘルパーscssを保管
+   リセットcss・ヘルパーscssを保管
  - function  
    sassの関数を保管
  - layout  
    header・main・fotterのスタイルを保管
  - mixin  
-   sassのmixinを保管
+   sassのmixinを保管
  - module  
    各モジュール保管
  - variable  
-   sassの変数を保管
+   sassの変数を保管
  - style.css  
    各sassディレクトリを集約  
 
 ### sassの注意点   
-`dist`配下のcssを直接修正すると`src`配下のファイルと同期が取れなくなるため、`dist`配下のcssを直接修正する場合は、差分比較するか、sassの運用を中止する。  
+`dist`配下のcssを直接修正すると`src`配下のファイルと同期が取れなくなるため、`dist`配下のcssを直接修正する場合は、差分比較するか、sassの運用を中止する。  
 
 ## 各ファイルとwordpress管理画面の更新方法  
 
@@ -139,7 +139,7 @@ gulp起動中に`/src/`配下にあるファイルの編集を行うと自動�
   `url(/images/`  
   ↓  
   `url(images/`  
-3. ソースを全コピー
+3. ソースを全コピー
 4. wordpressのテーマ編集のcssにペースト  
 
 ### javascript  
@@ -151,7 +151,7 @@ gulp起動中に`/src/`配下にあるファイルの編集を行うと自動�
 以下のファイルはローカルにてスタイルを確認するためのファイル  
 
  - index.html
-   トップページ
+   トップページ
  - entry.html
    記事
  - list.html
