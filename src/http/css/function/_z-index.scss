@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+$z-map: (
+ header, nav, modal
+);
+@function z($name) {
+ @return index($z-map, $name);
+}
+
+//.header {
+//  z-index: z(header);
+//}
+//.modal {
+//  z-index: z(modal);
+//}

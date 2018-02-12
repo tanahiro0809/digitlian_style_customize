@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+//font-sizeとline-height
+@mixin fts($fts, $lin: 16) {
+  $rem: $fts / 10;
+  $linS: $lin / $fts;
+  font-size: #{$fts}px;
+  font-size: #{$rem}rem;
+  line-height: $linS;
+}

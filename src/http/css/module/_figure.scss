@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+[class^="figure-"]{
+  @include mq-up(){
+    margin: 25px 0 0 0;
+  }
+  @include mq-down(){
+    margin: 15px 0 0 0;
+  }
+}
+
+.figure-ful{
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+
+.figure-max{
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.figure-center{
+  text-align: center;
+  img{
+    display: block;
+    margin: 0 auto;
+  }
+}
