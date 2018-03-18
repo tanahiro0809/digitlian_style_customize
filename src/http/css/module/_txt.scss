@@ -159,7 +159,7 @@
       width: calc(100% - 108px);
       border-radius: 5px;
       border: 3px solid #d9dada;
-      @include fts(14, 21);
+      @include fts(16, 32);
       padding: 20px;
       &:before{
         border-right: 8px solid #d9dada;
@@ -192,7 +192,7 @@
       width: calc(100% - 54px);
       border-radius: 3px;
       border: 2px solid #d9dada;
-      @include fts(14, 21);
+      @include fts(14, 28);
       padding: 12px;
       &:before{
         border-right: 5px solid #d9dada;

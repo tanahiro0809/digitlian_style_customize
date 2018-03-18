@@ -288,8 +288,6 @@ input[type="submit"]::-webkit-search-decoration, input[type="button"]::-webkit-s
 
 .article-content iframe { width: 100%; height: 245px; }
 
-.article-content > p { font-size: 14px; font-size: 1.4rem; line-height: 1.5; }
-
 .article-content a { word-break: break-all; }
 
 .article-content a:hover { text-decoration: none; }
@@ -308,15 +306,11 @@ input[type="submit"]::-webkit-search-decoration, input[type="button"]::-webkit-s
 
 .article-content > h4 { font-weight: bold; }
 
-.article-content > ul { font-size: 14px; font-size: 1.4rem; line-height: 1.5; }
-
 .article-content > ul > li { position: relative; }
 
 .article-content > ul > li:after { content: ''; position: absolute; margin: auto; left: 0; border-radius: 50%; background: #333; }
 
 .article-content blockquote { border: 1px solid #cccccc; position: relative; }
-
-.article-content blockquote > p { font-size: 14px; font-size: 1.4rem; line-height: 1.5; }
 
 .article-content blockquote table { width: 100%; border-top: 1px solid #efefef; border-left: 1px solid #efefef; }
 
@@ -353,8 +347,6 @@ input[type="submit"]::-webkit-search-decoration, input[type="button"]::-webkit-s
 .have_bullets .toc_list > li a { display: block; text-decoration: none; position: relative; color: #333; }
 
 .have_bullets .toc_list > li a:before { left: 4px; content: '\0025bc'; top: .8em; position: absolute; }
-
-.article-relation { border-top: #d9dada solid 3px; }
 
 .ssLimitedContainerHeader > div { display: block !important; }
 
@@ -492,21 +484,23 @@ input[type="submit"]::-webkit-search-decoration, input[type="button"]::-webkit-s
   .txt-link > .link-item { padding: 0 0 0 8px; }
   .txt-link > .link-item:before { top: .35em; } .txt-data { font-size: 10px; font-size: 1rem; line-height: 1; } .txt-voice > .img img { width: 44px; height: 44px; border: 2px solid #d9dada; }
   .txt-voice .name { text-align: left; margin: 5px -5px 0 0; }
-  .txt-voice > .voice { margin: 0 0 0 10px; width: calc(100% - 54px); border-radius: 3px; border: 2px solid #d9dada; font-size: 14px; font-size: 1.4rem; line-height: 1.5; padding: 12px; }
+  .txt-voice > .voice { margin: 0 0 0 10px; width: calc(100% - 54px); border-radius: 3px; border: 2px solid #d9dada; font-size: 14px; font-size: 1.4rem; line-height: 2; padding: 12px; }
   .txt-voice > .voice:before { border-right: 5px solid #d9dada; border-bottom: 5px solid transparent; border-top: 5px solid transparent; left: -7px; }
-  .txt-voice > .voice:after { border-right: 7px solid #fff; border-bottom: 5px solid transparent; border-top: 5px solid transparent; left: -5px; } [class^="figure-"] { margin: 15px 0 0 0; } .article-content > h2 { font-size: 16px; font-size: 1.6rem; line-height: 1.5; padding: 8px 13px; margin: 20px 0 13px; }
-  .article-content > h2:before { left: 8.5%; bottom: -9px; border-width: 9px 6.5px 0 6.5px; } .article-content > h2.hdg-article-lv3 { font-size: 15px; font-size: 1.5rem; line-height: 1.46667; margin: 30px 0 20px 0; } .article-content > h3 { font-size: 15px; font-size: 1.5rem; line-height: 1.46667; margin: 30px 0 20px 0; } .article-content > h3.hdg-article-lv2 { font-size: 16px; font-size: 1.6rem; line-height: 1.5; padding: 8px 13px; margin: 20px 0 13px; }
-  .article-content > h3.hdg-article-lv2:before { left: 8.5%; bottom: -9px; border-width: 9px 6.5px 0 6.5px; } .article-content > h4 { font-size: 15px; font-size: 1.5rem; line-height: 1.46667; margin: 15px 0; } .article-content > hr { margin: 25px 0; border-top: #d9dada solid 2px; } .article-content > ul { margin: 15px 0; }
+  .txt-voice > .voice:after { border-right: 7px solid #fff; border-bottom: 5px solid transparent; border-top: 5px solid transparent; left: -5px; } [class^="figure-"] { margin: 15px 0 0 0; } .article-content > p { font-size: 14px; font-size: 1.4rem; line-height: 2; } .article-content > h2 { font-size: 16px; font-size: 1.6rem; line-height: 1.5; padding: 8px 13px; margin: 20px 0 13px; }
+  .article-content > h2:before { left: 8.5%; bottom: -9px; border-width: 9px 6.5px 0 6.5px; } .article-content > h2.hdg-article-lv3 { font-size: 15px; font-size: 1.5rem; line-height: 1.46667; margin: 30px 0 20px 0; } .article-content > h2 { font-size: 18px; font-size: 1.8rem; line-height: 1.5; } .article-content > h3 { font-size: 15px; font-size: 1.5rem; line-height: 1.46667; margin: 30px 0 20px 0; } .article-content > h3.hdg-article-lv2 { font-size: 16px; font-size: 1.6rem; line-height: 1.5; padding: 8px 13px; margin: 20px 0 13px; }
+  .article-content > h3.hdg-article-lv2:before { left: 8.5%; bottom: -9px; border-width: 9px 6.5px 0 6.5px; } .article-content > h4 { font-size: 15px; font-size: 1.5rem; line-height: 1.46667; margin: 15px 0; } .article-content > hr { margin: 25px 0; border-top: #d9dada solid 2px; } .article-content > ul { font-size: 14px; font-size: 1.4rem; line-height: 2; margin: 15px 0; }
   .article-content > ul > li { padding: 0 0 0 10px; }
   .article-content > ul > li + li { margin: 10px 0 0 0; }
-  .article-content > ul > li:after { top: .45em; width: 4px; height: 4px; } .article-content blockquote table { margin: 15px 0; }
+  .article-content > ul > li:after { top: .7em; width: 4px; height: 4px; } .article-content blockquote table { margin: 15px 0; }
+  .article-content blockquote table > p { font-size: 14px; font-size: 1.4rem; line-height: 2; }
   .article-content blockquote table th, .article-content blockquote table td { font-size: 12px; font-size: 1.2rem; line-height: 1.5; } .article-content blockquote { margin: 25px 0; padding: 15px; }
   .article-content blockquote:before, .article-content blockquote:after { font-size: 14px; font-size: 1.4rem; line-height: 1; padding: 2px; }
   .article-content blockquote:before { left: -3px; top: -7px; }
   .article-content blockquote:after { right: -3px; bottom: -8px; } .have_bullets { margin: 35px 15px; padding: 0 15px 25px; }
-  .have_bullets .toc_title { padding: 15px 10px 16px; }
-  .have_bullets .toc_list > li a { padding: 10px 4px 10px 22px; } .article-relation { margin: 40px 0 0 0; padding-top: 25px; }
-  .article-relation .hdg-nor.lv2 + .lst-article-like + .hdg-nor.lv2 { margin-top: 40px; } .ssLimitedContainerHeader > div > div { margin: 25px 0 0 0; padding: 0 0 15px 0; min-width: 1px; font-size: 15px; font-size: 1.5rem; line-height: 1.4; } .ssLimitedContainerHeader > div > div > div:after { margin: 0 0 0 6px; font-size: 12px; font-size: 1.2rem; line-height: 1.5; } .lst-article-like { margin: 20px 0 0 0; }
+  .have_bullets .toc_title { padding: 15px 10px 16px; font-size: 14px; font-size: 1.4rem; line-height: 2; }
+  .have_bullets .toc_list { font-size: 14px; font-size: 1.4rem; line-height: 2; }
+  .have_bullets .toc_list > li a { padding: 10px 4px 10px 22px; } .article-relation .hdg-nor.lv2 + .lst-article-like + .hdg-nor.lv2 { margin-top: 40px; }
+  .article-relation > .lst-share-btn { margin: 20px 0 35px -5px; } .ssLimitedContainerHeader > div > div { margin: 25px 0 0 0; padding: 0 0 15px 0; min-width: 1px; font-size: 15px; font-size: 1.5rem; line-height: 1.4; } .ssLimitedContainerHeader > div > div > div:after { margin: 0 0 0 6px; font-size: 12px; font-size: 1.2rem; line-height: 1.5; } .lst-article-like { margin: 20px 0 0 0; }
   .lst-article-like > li { margin: 5px 0 0 0; }
   .lst-article-like > li > a { padding: 10px; background: #fff; }
   .lst-article-like > li .img { width: 23%; }
@@ -662,21 +656,23 @@ input[type="submit"]::-webkit-search-decoration, input[type="button"]::-webkit-s
   .txt-link > .link-item:before { top: .5em; }
   .txt-link > .link-item:hover { text-decoration: underline; } .txt-data { font-size: 12px; font-size: 1.2rem; line-height: 1; } .lst-popular .txt-data { font-size: 10px; font-size: 1rem; line-height: 1; } .txt-voice > .img img { border: 3px solid #d9dada; width: 88px; height: 88px; }
   .txt-voice .name { text-align: center; margin: 5px -20px 0; }
-  .txt-voice > .voice { margin: 0 0 0 20px; width: calc(100% - 108px); border-radius: 5px; border: 3px solid #d9dada; font-size: 14px; font-size: 1.4rem; line-height: 1.5; padding: 20px; }
+  .txt-voice > .voice { margin: 0 0 0 20px; width: calc(100% - 108px); border-radius: 5px; border: 3px solid #d9dada; font-size: 16px; font-size: 1.6rem; line-height: 2; padding: 20px; }
   .txt-voice > .voice:before { border-right: 8px solid #d9dada; border-bottom: 8px solid transparent; border-top: 8px solid transparent; left: -11px; }
-  .txt-voice > .voice:after { border-right: 10px solid #fff; border-bottom: 8px solid transparent; border-top: 8px solid transparent; left: -7px; } [class^="figure-"] { margin: 25px 0 0 0; } .article-content > h2 { font-size: 24px; font-size: 2.4rem; line-height: 1.5; padding: 12px 25px; margin: 50px 0 35px; }
+  .txt-voice > .voice:after { border-right: 10px solid #fff; border-bottom: 8px solid transparent; border-top: 8px solid transparent; left: -7px; } [class^="figure-"] { margin: 25px 0 0 0; } .article-content > p { font-size: 16px; font-size: 1.6rem; line-height: 2; } .article-content > h2 { font-size: 24px; font-size: 2.4rem; line-height: 1.5; padding: 12px 25px; margin: 50px 0 35px; }
   .article-content > h2:before { left: 7%; bottom: -15px; border-width: 15px 10px 0 10px; } .article-content > h2.hdg-article-lv3 { font-size: 20px; font-size: 2rem; line-height: 1.5; margin: 40px 0 30px 0; } .article-content > h3 { font-size: 20px; font-size: 2rem; line-height: 1.5; margin: 40px 0 30px 0; } .article-content > h3.hdg-article-lv2 { font-size: 24px; font-size: 2.4rem; line-height: 1.5; padding: 12px 25px; margin: 50px 0 35px; }
-  .article-content > h3.hdg-article-lv2:before { left: 7%; bottom: -15px; border-width: 15px 10px 0 10px; } .article-content > h4 { font-size: 16px; font-size: 1.6rem; line-height: 1.5; margin: 20px 0; } .article-content > hr { margin: 40px -20px; border-top: #d9dada solid 3px; } .article-content > ul { margin: 20px 0; }
+  .article-content > h3.hdg-article-lv2:before { left: 7%; bottom: -15px; border-width: 15px 10px 0 10px; } .article-content > h4 { font-size: 16px; font-size: 1.6rem; line-height: 1.5; margin: 20px 0; } .article-content > hr { margin: 40px -20px; border-top: #d9dada solid 3px; } .article-content > ul { font-size: 16px; font-size: 1.6rem; line-height: 2; margin: 20px 0; }
   .article-content > ul > li { padding: 0 0 0 15px; }
   .article-content > ul > li + li { margin: 10px 0 0 0; }
-  .article-content > ul > li:after { top: .5em; width: 5px; height: 5px; } .article-content blockquote table { margin: 20px 0; }
+  .article-content > ul > li:after { top: .8em; width: 5px; height: 5px; } .article-content blockquote table { margin: 20px 0; }
+  .article-content blockquote table > p { font-size: 16px; font-size: 1.6rem; line-height: 2; }
   .article-content blockquote table th, .article-content blockquote table td { font-size: 14px; font-size: 1.4rem; line-height: 1.5; } .article-content blockquote { margin: 45px 0; padding: 30px; }
   .article-content blockquote:before, .article-content blockquote:after { font-size: 20px; font-size: 2rem; line-height: 1; padding: 4px; }
   .article-content blockquote:before { left: -5px; top: -15px; }
   .article-content blockquote:after { right: -5px; bottom: -15px; } .have_bullets { margin: 50px 30px; padding: 0 25px 30px; }
-  .have_bullets .toc_title { padding: 20px 10px 18px; }
+  .have_bullets .toc_title { padding: 20px 10px 18px; font-size: 16px; font-size: 1.6rem; line-height: 2; }
+  .have_bullets .toc_list { font-size: 16px; font-size: 1.6rem; line-height: 2; }
   .have_bullets .toc_list > li a { padding: 10px 4px 10px 22px; }
-  .have_bullets .toc_list > li a:hover { text-decoration: underline; } .article-relation { margin: 100px 0 0 0; padding-top: 30px; } .ssLimitedContainerHeader > div > div { margin: 40px 0 0 0; padding: 0 0 10px 0; min-width: 1px; font-size: 20px; font-size: 2rem; line-height: 1.5; } .ssLimitedContainerHeader > div > div > div:after { margin: 0 0 0 12px; font-size: 14px; font-size: 1.4rem; line-height: 1.5; } .lst-article-like { display: flex; flex-wrap: wrap; margin: 0 0 0 -15px; }
+  .have_bullets .toc_list > li a:hover { text-decoration: underline; } .ssLimitedContainerHeader > div > div { margin: 40px 0 0 0; padding: 0 0 10px 0; min-width: 1px; font-size: 20px; font-size: 2rem; line-height: 1.5; } .ssLimitedContainerHeader > div > div > div:after { margin: 0 0 0 12px; font-size: 14px; font-size: 1.4rem; line-height: 1.5; } .lst-article-like { display: flex; flex-wrap: wrap; margin: 0 0 0 -15px; }
   .lst-article-like > li { margin: 0 0 0 15px; width: calc(50% - 15px); border-bottom: 1px solid #d9dada; }
   .lst-article-like > li > a { padding: 20px 20px 20px 0; text-decoration: none; transition: opacity .3s; }
   .lst-article-like > li > a:hover { opacity: .7; }
