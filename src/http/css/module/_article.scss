@@ -263,16 +263,20 @@
 
 //article-relation
 .article-relation{
-  border-top: #d9dada solid 3px;
   @include mq-up(){
-    margin: 100px 0 0 0;
-    padding-top: 30px;
+//    margin: 50px 0 0 0;
+//    padding-top: 30px;
   }
   @include mq-down(){
-    margin: 40px 0 0 0;
-    padding-top: 25px;
+//    margin: 20px 0 0 0;
+//    padding-top: 25px;
     .hdg-nor.lv2 + .lst-article-like + .hdg-nor.lv2{
       margin-top: 40px;
+    }
+    @at-root{
+      .article-relation > .lst-share-btn{
+        margin: 20px 0 35px -5px;
+      }
     }
   }
 }
